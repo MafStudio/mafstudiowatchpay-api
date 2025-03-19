@@ -1,11 +1,12 @@
 {
-  "name": "mafstudiowatchpay-API",
+  "name": "mafstudiowatchpay-api",
   "version": "1.0.0",
   "description": "MafStudio WatchPay API",
   "main": "index.js",
-  "scripts": {"start": "node index.js"
+  "scripts": {
+    "start": "node index.js"
   },
   "dependencies": {
-    "Express": "^4.18.2"
+    "express": "^4.18.2"
   }
 }
