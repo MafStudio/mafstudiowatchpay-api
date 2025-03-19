@@ -1,5 +1,4 @@
-{
-  const express = require('express');
+const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -20,3 +19,15 @@ app.post('/register', (req, res) => {
   if (!username || !email || !password) {
     return res.status(400).json({ message: 'All fields are required' });
   }
+
+  // নতুন ইউজার সংরক্ষণ করা
+  const newUser = { id: users.length + 1, username, email, password };
+  users.push(newUser);
+
+  res.status(201).json({ message: 'User registered successfully', user: newUser });
+});
+
+// *সার্ভার চালু করা*
+app.listen(port, () => {
+  console.log(Server is running on port ${port});
+});
