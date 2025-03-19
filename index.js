@@ -25,9 +25,9 @@ app.post('/register', (req, res) => {
   users.push(newUser);
 
   res.status(201).json({ message: 'User registered successfully', user: newUser });
-});
+});  // **এই `}` মিসিং ছিল, এটা যোগ করো**
 
-// *সার্ভার চালু করা*
+// **সার্ভার চালু করা**
 app.listen(port, () => {
-  console.log(Server is running on port ${port});
+  console.log(`Server is running on port ${port}`);
 });
