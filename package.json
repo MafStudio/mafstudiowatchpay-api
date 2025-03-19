@@ -1,5 +1,5 @@
 {
-  "name": "mafstudiowatchpay-api",
+  "name": "mafstudiowatchpay-API",
   "version": "1.0.0",
   "description": "MafStudio WatchPay API",
   "main": "index.js",
@@ -7,6 +7,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "Express": "^4.18.2"
   }
 }
