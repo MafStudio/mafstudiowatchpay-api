@@ -28,7 +28,8 @@ app.post('/register', (req, res) => {
 });  // **এই `}` মিসিং ছিল, এটা যোগ করো**
 
 // **সার্ভার চালু করা**
+const port = 4000;
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`✅ Server is running on port ${port}`);
 });
 }
